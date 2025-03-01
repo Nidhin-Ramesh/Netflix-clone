@@ -33,7 +33,7 @@ const TitleCards = ({ title, category }) => {
       })
       .then((res) => setApiData(res.results))
       .catch((err) => {console.error(err)
-        alert(err)
+        
       });
 
     cardsRef.current.addEventListener("wheel", handleWheel);
